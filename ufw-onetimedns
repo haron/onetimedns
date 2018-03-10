@@ -1,0 +1,4 @@
+[onetimedns]
+title=onetimedns
+description=onetimedns
+ports=5353,53/udp

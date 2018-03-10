@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/var/www/onetimedns/persist.py | ts >> /var/log/persist.log

@@ -1,0 +1,4 @@
+Flask==0.10.1
+redis==2.7.6
+gunicorn==17.5
+superlance==0.11

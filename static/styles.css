@@ -1,0 +1,14 @@
+@import url(//fonts.googleapis.com/css?family=Droid+Sans+Mono);
+body {
+    padding: 5px 12px;
+}
+body, code, pre, a {
+  background-color: black;
+  color: yellow;
+  font-family: 'Droid Sans Mono', sans-serif;
+  font-size: 11pt;
+}
+h1, h2 {
+  color: white;
+  font-size: 13pt;
+}

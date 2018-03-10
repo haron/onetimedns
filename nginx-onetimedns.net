@@ -1,0 +1,21 @@
+server {
+    listen 80;
+    server_name onetimedns.net www.onetimedns.net;
+    location / {
+        rewrite /.* https://$host$request_uri;
+    }
+    # exception for poor clients without SSL support:
+    location /set {
+        proxy_pass http://127.0.0.1:8080;
+        access_log off;
+    }
+}
+server {
+    listen 443 ssl;
+    server_name onetimedns.net www.onetimedns.net;
+    root /var/www/onetimedns/static;
+    location /set {
+        proxy_pass http://127.0.0.1:8080;
+        access_log off;
+    }
+}
